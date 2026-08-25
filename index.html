@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ashir Hadi | BMS Operator & Assistant Supervisor</title>
+
+<meta name="description"
+content="Ashir Hadi — BMS Operator and Assistant Supervisor with 3 years of UAE experience at Imdaad.">
+
+<meta name="author" content="Ashir Hadi">
+
+<!-- LinkedIn / Social Preview -->
+<meta property="og:title"
+content="Ashir Hadi | BMS Operator & Assistant Supervisor">
+
+<meta property="og:description"
+content="BMS Operator & Assistant Supervisor with 3 years of professional experience at Imdaad, UAE.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="linkedin-preview.jpg">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#04070d;
+    color:#f5f8ff;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root{
+
+    --cyan:#00e5ff;
+    --blue:#397cff;
+    --green:#22e58a;
+
+    --bg:#04070d;
+    --bg2:#080e19;
+
+    --text:#f5f8ff;
+    --muted:#91a0b7;
+
+    --glass:rgba(10,18,32,.68);
+
+    --border:rgba(0,229,255,.18);
+
+    --shadow:
+        0 0 40px rgba(0,229,255,.10);
+
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-10;
+    overflow:hidden;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0,229,255,.10),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(57,124,255,.12),
+            transparent 30%
+        ),
+        var(--bg);
+}
+
+.grid{
+    position:absolute;
+    width:200%;
+    height:100%;
+    left:-50%;
+    bottom:-20%;
+    transform:
+        perspective(600px)
+        rotateX(60deg);
+
+    background-image:
+        linear-gradient(
+            rgba(0,229,255,.045) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0,229,255,.045) 1px,
+            transparent 1px
+        );
+
+    background-size:55px 55px;
+
+    animation:gridMove 18s linear infinite;
+}
+
+@keyframes gridMove{
+
+    from{
+        transform:
+            perspective(600px)
+            rotateX(60deg)
+            translateY(0);
+    }
+
+    to{
+        transform:
+            perspective(600px)
+            rotateX(60deg)
+            translateY(55px);
+    }
+
+}
+
+.glow{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.13;
+}
+
+.glow.one{
+    background:var(--cyan);
+    top:-100px;
+    left:-100px;
+}
+
+.glow.two{
+    background:var(--blue);
+    right:-100px;
+    bottom:-100px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container{
+    width:min(1150px,92%);
+    margin:auto;
+}
+
+section{
+    padding:110px 0;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(4,7,13,.72);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.05);
+}
+
+nav{
+    height:76px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-family:"Orbitron",sans-serif;
+
+    font-size:21px;
+    font-weight:800;
+
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:var(--cyan);
+
+    text-shadow:
+        0 0 15px var(--cyan);
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#aebbd0;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--cyan);
+
+    text-shadow:
+        0 0 12px
+        rgba(0,229,255,.7);
+}
+
+.menu{
+    display:none;
+
+    color:var(--cyan);
+
+    font-size:27px;
+
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-top:120px;
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.15fr
+        .85fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:9px 15px;
+
+    border-radius:50px;
+
+    background:
+        rgba(0,229,255,.06);
+
+    border:
+        1px solid
+        rgba(0,229,255,.22);
+
+    color:var(--cyan);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+}
+
+.status-dot{
+
+    width:7px;
+    height:7px;
+
+    background:var(--green);
+
+    border-radius:50%;
+
+    box-shadow:
+        0 0 15px
+        var(--green);
+
+}
+
+.hero h1{
+
+    font-family:"Orbitron",sans-serif;
+
+    font-size:
+        clamp(43px,7vw,78px);
+
+    line-height:1;
+
+    letter-spacing:-3px;
+
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+
+    color:var(--cyan);
+
+    text-shadow:
+        0 0 15px
+        rgba(0,229,255,.5),
+
+        0 0 50px
+        rgba(0,229,255,.18);
+}
+
+.hero-title{
+
+    font-size:23px;
+
+    font-weight:700;
+
+    color:#d9e4f5;
+
+    margin-bottom:18px;
+}
+
+.hero-description{
+
+    color:var(--muted);
+
+    max-width:650px;
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+    margin-top:32px;
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 21px;
+
+    border-radius:11px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    transition:.3s;
+
+    border:
+        1px solid
+        var(--border);
+}
+
+.btn-primary{
+
+    color:#021017;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--cyan),
+            var(--blue)
+        );
+
+    box-shadow:
+        0 0 25px
+        rgba(0,229,255,.15);
+}
+
+.btn-secondary{
+
+    color:#d9e4f5;
+
+    background:
+        rgba(255,255,255,.035);
+}
+
+.btn:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,229,255,.15);
+}
+
+
+/* =====================================================
+   HERO PROFILE
+===================================================== */
+
+.profile-wrap{
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.profile-card{
+
+    position:relative;
+
+    width:min(390px,100%);
+
+    padding:15px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0,229,255,.12),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid
+        rgba(0,229,255,.22);
+
+    box-shadow:var(--shadow);
+
+    transform-style:preserve-3d;
+
+    transition:.2s;
+}
+
+.profile-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+    border-radius:28px;
+
+    border:
+        1px solid
+        rgba(0,229,255,.08);
+
+    pointer-events:none;
+}
+
+.profile-inner{
+
+    min-height:500px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,229,255,.12),
+            transparent 55%
+        ),
+        rgba(4,9,18,.9);
+
+    border:
+        1px solid
+        rgba(255,255,255,.05);
+}
+
+.profile-image{
+
+    width:215px;
+    height:215px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:
+        3px solid
+        var(--cyan);
+
+    box-shadow:
+
+        0 0 25px
+        rgba(0,229,255,.5),
+
+        0 0 80px
+        rgba(0,229,255,.13);
+}
+
+.profile-name{
+
+    margin-top:24px;
+
+    font-family:"Orbitron",sans-serif;
+
+    font-size:21px;
+}
+
+.profile-role{
+
+    margin-top:9px;
+
+    color:var(--cyan);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.profile-location{
+
+    margin-top:8px;
+
+    color:#75849a;
+
+    font-size:12px;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section-head{
+
+    text-align:center;
+
+    margin-bottom:55px;
+}
+
+.section-label{
+
+    color:var(--cyan);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+}
+
+.section-head h2{
+
+    font-family:"Orbitron",sans-serif;
+
+    font-size:34px;
+
+    margin-top:10px;
+}
+
+.section-head p{
+
+    color:var(--muted);
+
+    max-width:650px;
+
+    margin:15px auto 0;
+
+    line-height:1.7;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:22px;
+}
+
+.glass-card{
+
+    padding:32px;
+
+    background:var(--glass);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+}
+
+.glass-card:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(0,229,255,.4);
+
+    box-shadow:
+        var(--shadow);
+}
+
+.card-icon{
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    color:var(--cyan);
+
+    background:
+        rgba(0,229,255,.07);
+
+    border:
+        1px solid
+        rgba(0,229,255,.16);
+
+    margin-bottom:20px;
+
+    font-size:20px;
+}
+
+.glass-card h3{
+
+    font-size:20px;
+
+    margin-bottom:13px;
+}
+
+.glass-card p{
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+    font-size:14px;
+}
+
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+
+.experience-box{
+
+    max-width:900px;
+
+    margin:auto;
+
+    position:relative;
+}
+
+.experience-line{
+
+    position:absolute;
+
+    left:25px;
+
+    top:0;
+
+    bottom:0;
+
+    width:1px;
+
+    background:
+        linear-gradient(
+            transparent,
+            var(--cyan),
+            transparent
+        );
+}
+
+.experience-item{
+
+    position:relative;
+
+    padding-left:75px;
+}
+
+.experience-dot{
+
+    position:absolute;
+
+    left:15px;
+
+    top:25px;
+
+    width:21px;
+    height:21px;
+
+    border-radius:50%;
+
+    background:var(--cyan);
+
+    box-shadow:
+        0 0 20px
+        var(--cyan);
+}
+
+.experience-card{
+
+    padding:35px;
+
+    background:var(--glass);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:22px;
+
+    backdrop-filter:blur(15px);
+}
+
+.company{
+
+    color:var(--cyan);
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+.experience-card h3{
+
+    font-size:27px;
+
+    margin:10px 0;
+}
+
+.experience-date{
+
+    color:#7e8da4;
+
+    font-size:13px;
+
+    margin-bottom:23px;
+}
+
+.experience-card ul{
+
+    padding-left:19px;
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+    font-size:14px;
+}
+
+.experience-card li{
+
+    margin-bottom:8px;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.skill{
+
+    padding:24px;
+
+    background:var(--glass);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:17px;
+}
+
+.skill-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:12px;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.skill-percent{
+
+    color:var(--cyan);
+}
+
+.skill-bar{
+
+    height:6px;
+
+    background:#182132;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.skill-progress{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--cyan),
+            var(--blue)
+        );
+
+    transition:
+        width 1.5s ease;
+}
+
+
+/* =====================================================
+   CAPABILITIES
+===================================================== */
+
+.capabilities{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.capability{
+
+    padding:30px;
+
+    background:var(--glass);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:20px;
+
+    transition:.35s;
+}
+
+.capability:hover{
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--shadow);
+}
+
+.capability-number{
+
+    font-family:"Orbitron",sans-serif;
+
+    font-size:13px;
+
+    color:var(--cyan);
+
+    margin-bottom:25px;
+}
+
+.capability h3{
+
+    margin-bottom:12px;
+}
+
+.capability p{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    line-height:1.75;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:60px 30px;
+
+    background:
+
+        radial-gradient(
+            circle at top,
+            rgba(0,229,255,.13),
+            transparent 55%
+        ),
+
+        var(--glass);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:28px;
+}
+
+.contact h2{
+
+    font-family:"Orbitron",sans-serif;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+}
+
+.contact p{
+
+    color:var(--muted);
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.05);
+
+    padding:28px 0;
+
+    text-align:center;
+
+    color:#66758b;
+
+    font-size:12px;
+}
+
+
+/* =====================================================
+   REVEAL ANIMATION
+===================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    .hero-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .hero-description{
+
+        margin:auto;
+    }
+
+    .buttons{
+
+        justify-content:center;
+    }
+
+    .profile-wrap{
+
+        margin-top:15px;
+    }
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .capabilities{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .nav-links{
+
+        position:absolute;
+
+        top:76px;
+
+        left:0;
+
+        width:100%;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:22px;
+
+        padding:25px;
+
+        background:
+            rgba(4,7,13,.97);
+
+        border-bottom:
+            1px solid
+            var(--border);
+    }
+
+    .nav-links.active{
+
+        display:flex;
+    }
+
+    .menu{
+
+        display:block;
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+
+        font-size:44px;
+    }
+
+    .hero-title{
+
+        font-size:19px;
+    }
+
+    section{
+
+        padding:85px 0;
+    }
+
+    .experience-item{
+
+        padding-left:50px;
+    }
+
+    .experience-line{
+
+        left:17px;
+    }
+
+    .experience-dot{
+
+        left:7px;
+    }
+
+    .experience-card{
+
+        padding:25px;
+    }
+
+    .experience-card h3{
+
+        font-size:21px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="background">
+
+    <div class="grid"></div>
+
+    <div class="glow one"></div>
+
+    <div class="glow two"></div>
+
+</div>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="#home" class="logo">
+ASHIR<span>HADI</span>
+</a>
+
+<ul class="nav-links" id="navLinks">
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#experience">Experience</a>
+</li>
+
+<li>
+<a href="#skills">Skills</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+<div class="menu" id="menu">
+☰
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+
+<div class="reveal">
+
+<div class="status">
+
+<span class="status-dot"></span>
+
+OPEN TO PROFESSIONAL OPPORTUNITIES
+
+</div>
+
+
+<h1>
+
+ASHIR
+
+<br>
+
+<span>HADI</span>
+
+</h1>
+
+
+<div class="hero-title">
+
+BMS Operator | Assistant Supervisor
+
+</div>
+
+
+<p class="hero-description">
+
+Facility management professional with
+<strong>3 years of UAE experience at Imdaad</strong>,
+specializing in BMS operations, building monitoring,
+facility coordination and supervisory support.
+
+</p>
+
+
+<div class="buttons">
+
+<a
+href="#experience"
+class="btn btn-primary">
+
+VIEW EXPERIENCE
+
+</a>
+
+
+<a
+href="resume.pdf"
+target="_blank"
+class="btn btn-secondary">
+
+VIEW CV
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROFILE -->
+
+<div class="profile-wrap reveal">
+
+<div class="profile-card" id="profileCard">
+
+<div class="profile-inner">
+
+
+<!--
+    YOUR PHOTO
+
+    Keep your photo in the same folder
+    and use this filename:
+
+    IMG-20250803-WA0006.jpg
+-->
+
+<img
+src="IMG-20250803-WA0006.jpg"
+alt="Ashir Hadi"
+class="profile-image"
+onerror="this.style.display='none'"
+>
+
+
+<div class="profile-name">
+
+ASHIR HADI
+
+</div>
+
+
+<div class="profile-role">
+
+BMS OPERATOR • ASSISTANT SUPERVISOR
+
+</div>
+
+
+<div class="profile-location">
+
+UAE • IMDAAD • 3 YEARS
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+<div class="container">
+
+
+<div class="section-head reveal">
+
+<div class="section-label">
+PROFILE
+</div>
+
+<h2>
+ABOUT ME
+</h2>
+
+<p>
+A professional profile focused on BMS operations,
+facility monitoring and supervisory coordination.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="glass-card reveal">
+
+<div class="card-icon">
+◉
+</div>
+
+<h3>
+Professional Profile
+</h3>
+
+<p>
+
+I am a BMS Operator and Assistant Supervisor
+with 3 years of professional experience at
+Imdaad in the UAE. My experience is focused
+on building management systems, facility
+operations, monitoring, coordination and
+operational support.
+
+</p>
+
+</div>
+
+
+<div class="glass-card reveal">
+
+<div class="card-icon">
+◆
+</div>
+
+<h3>
+Professional Objective
+</h3>
+
+<p>
+
+My objective is to contribute my BMS operational
+knowledge, facility management experience and
+supervisory coordination skills to a professional
+organization while continuing to develop my
+technical and leadership capabilities.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience">
+
+<div class="container">
+
+
+<div class="section-head reveal">
+
+<div class="se
